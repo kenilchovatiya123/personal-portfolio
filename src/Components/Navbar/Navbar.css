@@ -1,0 +1,152 @@
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 8%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 8%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+.dark-nav {
+    /* background: #181818; */
+    background: var(--grey);
+    transition: 0.5s;
+}
+
+nav h1 {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav h1 span {
+    /* color: #ff004f; */
+    color: var(--teal);
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--teal);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+    /* gap: 20px; */
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: var(--teal);
+}
+
+nav .fa-menu {
+    display: none;
+}
+
+
+/* responsive css style */
+@media only screen and (max-width: 600px) {
+    /* #header {
+        background: var(--black);
+    } */
+
+    .header-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50%;
+        font-size: 18px;
+    }
+
+    .header-text h1 {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 10px;
+    }
+
+    nav .fa-menu {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: var(--teal);
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-menu {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav ul li a{
+        color: var(--off-white);
+    }
+
+    nav ul li a:hover {
+        font-weight: 500;
+        transition: 0.2s;
+    }
+}
