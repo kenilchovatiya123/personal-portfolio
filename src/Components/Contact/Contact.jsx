@@ -52,7 +52,7 @@ const Contact = () => {
                             <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
                         </div>
                         <div>
-                            <a href={resume} download="Resume.pdf">
+                            <a href={resume} download='Resume.pdf'>
                                 <input type="button" className='btn btn2' value="DOWNLOAD CV" />
                             </a>
                         </div>

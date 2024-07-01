@@ -25,13 +25,13 @@ const Portfolio = () => {
                             <h3>Netflix Clone Website</h3>
                         </div>
                     </div>
-                    <div className="work">
+                    {/* <div className="work">
                         <img src="" alt="todo application" />
                         <div className="work-info">
                             <a href="#" target='_blank'><FontAwesomeIcon icon={faLink} /></a>
                             <h3>ToDo App</h3>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 {/* <a href="#" className="btn">See more</a> */}
             </div>
