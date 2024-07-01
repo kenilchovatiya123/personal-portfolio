@@ -10,31 +10,46 @@ const Portfolio = () => {
         <div className="portfolio" id="portfolio">
             <div className="container">
                 <h1 className="sub-title">My Work</h1>
-                <div className="work-list">
-                    <div className="work">
-                        <img src={portfolio_img1} alt="" />
-                        <div className="work-info">
-                            <a href={portfolio_img1} target='_blank'><FontAwesomeIcon icon={faLink} /></a>
-                            <h3>Personal Portfolio</h3>
-                        </div>
-                    </div>
-                    <div className="work">
-                        <img src={portfolio_img2} alt="" />
-                        <div className="work-info">
-                            <a href={portfolio_img2} target='_blank'><FontAwesomeIcon icon={faLink} /></a>
-                            <h3>Netflix Clone Website</h3>
-                        </div>
-                    </div>
-                    {/* <div className="work">
-                        <img src="" alt="todo application" />
-                        <div className="work-info">
-                            <a href="#" target='_blank'><FontAwesomeIcon icon={faLink} /></a>
-                            <h3>ToDo App</h3>
-                        </div>
-                    </div> */}
-                </div>
-                {/* <a href="#" className="btn">See more</a> */}
             </div>
+            <div className="portfolio-content container">
+                <div className="work-row">
+                    <img src={portfolio_img1} alt="" />
+                    <div className="main-row">
+                        <div className="row-text">
+                            <h5>Personal Portfolio</h5>
+                        </div>
+                        <div className="row-icon">
+                            <a href={portfolio_img1} target='_blank'><FontAwesomeIcon icon={faLink} /></a>
+                        </div>
+                    </div>
+                    <h4>personal website using REACT.JS</h4>
+                </div>
+                <div className="work-row">
+                    <img src={portfolio_img2} alt="" />
+                    <div className="main-row">
+                        <div className="row-text">
+                            <h5>Netflix Clone</h5>
+                        </div>
+                        <div className="row-icon">
+                            <a href={portfolio_img2} target='_blank'><FontAwesomeIcon icon={faLink} /></a>
+                        </div>
+                    </div>
+                    <h4>netflix landing page clone</h4>
+                </div>
+                <div className="work-row">
+                    <img src={portfolio_img1} alt="" />
+                    <div className="main-row">
+                        <div className="row-text">
+                            <h5>To-Do app</h5>
+                        </div>
+                        <div className="row-icon">
+                            <a href="#" target='_blank'><FontAwesomeIcon icon={faLink} /></a>
+                        </div>
+                    </div>
+                    <h4>to-do list application</h4>
+                </div>
+            </div>
+            {/* <a href="#" className="btn">See more</a> */}
         </div>
     )
 }

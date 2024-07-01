@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Contact.css'
-import resume from '../../assets/Resume/Kenilresume.pdf'
+import my_resume from '../../assets/Resume/Kenilresume.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faPaperPlane, faSquarePhone } from '@fortawesome/free-solid-svg-icons'
@@ -52,7 +52,7 @@ const Contact = () => {
                             <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
                         </div>
                         <div>
-                            <a href={resume} download='Resume.pdf'>
+                            <a href={my_resume} download="Resume.pdf" target='_blank'>
                                 <input type="button" className='btn btn2' value="DOWNLOAD CV" />
                             </a>
                         </div>
