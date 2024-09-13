@@ -52,7 +52,7 @@ const About = () => {
                             <div className="progress">
                                 <span className="skill"><span>Tailwind</span> <i className="val">75%</i></span>
                                 <div className="progress-bar-wrap">
-                                    <div style={{ width: "600%" }} className="progress-bar" role="progressbar"></div>
+                                    <div style={{ width: "60%" }} className="progress-bar" role="progressbar"></div>
                                 </div>
                             </div>
 
