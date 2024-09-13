@@ -39,7 +39,7 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faBars} className='fa-menu' onClick={openMenu} />
                 </nav>
                 <div className="header-text">
-                    <p>Front-End Developer</p>
+                    <p>Fresher</p>
                     <h1>Hi, I'm <span>Kenil</span> Chovatiya</h1>
                 </div>
             </div>
