@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Contact.css'
-import my_resume from '../../assets/Resume/Kenilresume.pdf'
+import my_resume from '../../assets/Resume/KENILRESUME.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faPaperPlane, faSquarePhone } from '@fortawesome/free-solid-svg-icons'
